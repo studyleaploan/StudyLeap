@@ -3,7 +3,7 @@
       var API_KEY  = ''; // 🔐 REMOVED: Set this via server-side injection or environment variable — never hardcode here
       var PLACE_ID = ''; // TODO(Study LEAP): paste your Google Business Profile Place ID here once it's set up (see Search Console / Google Maps "Share" link) — reviews will not display until this is filled in
 
-      var AVATAR_COLORS = ['#4C3B8C','#7c3aed','#059669','#dc2626','#d97706','#0891b2','#be185d'];
+      var AVATAR_COLORS = ['#0E6B5C','#7c3aed','#059669','#dc2626','#d97706','#0891b2','#be185d'];
       var GOOGLE_LOGO = '<svg width="20" height="20" viewBox="0 0 48 48" class="rv-glogo"><path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.1 33.8 29.6 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 5.1 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.5 0 20-7.5 20-21 0-1.3-.2-2.7-.5-4z"/><path fill="#EA4335" d="M6.3 14.7l7 5.1C15.2 16.1 19.3 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 5.1 29.6 3 24 3c-7.6 0-14.2 4.6-17.7 11.7z"/><path fill="#FBBC05" d="M24 45c5.5 0 10.4-1.9 14.2-5l-6.6-5.4C29.6 36.3 26.9 37 24 37c-5.5 0-10.2-3.3-11.8-8.1l-7 5.4C8 40.3 15.4 45 24 45z"/><path fill="#34A853" d="M44.5 20H24v8.5h11.8c-.9 2.6-2.7 4.8-5 6.1l6.6 5.4C41.3 36.5 45 30.7 45 24c0-1.3-.2-2.7-.5-4z"/></svg>';
 
       /* slider state */
@@ -29,7 +29,7 @@
             '<div class="rv-date">' + escHtml(r.relative_time_description || '') + '</div></div>' +
             GOOGLE_LOGO +
           '</div>' +
-          '<div class="rv-stars-row" style="color:#F59E0B">' + starsHTML(r.rating) + '</div>' +
+          '<div class="rv-stars-row" style="color:#A16207">' + starsHTML(r.rating) + '</div>' +
           '<p class="rv-text">' + escHtml(r.text || '') + '</p>' +
         '</div>';
       }
@@ -120,7 +120,7 @@
         /* Summary bar */
         document.getElementById('rv-score').textContent = place.rating || '—';
         document.getElementById('rv-stars-summary').textContent = starsHTML(Math.round(place.rating||0));
-        document.getElementById('rv-stars-summary').style.color = '#F59E0B';
+        document.getElementById('rv-stars-summary').style.color = '#A16207';
         document.getElementById('rv-total-text').textContent = (place.user_ratings_total || 0) + ' Google Reviews';
 
         // ── Sync AggregateRating schema with live Google data ──────────────
@@ -174,21 +174,11 @@
         s.onerror = showError;
         document.head.appendChild(s);
       } else {
-        // ── Static fallback reviews while API key is being configured ──
-        console.log('[Study LEAP] Showing static reviews. Set API_KEY above to load live Google Reviews.');
-        var staticReviews = [
-          { author_name:'Priya Sharma', rating:5, relative_time_description:'2 months ago', text:'Study LEAP helped me get a ₹25L loan for my MS in USA within 10 days. Exceptional service and guidance throughout the process!', profile_photo_url:'' },
-          { author_name:'Rahul Verma', rating:5, relative_time_description:'3 months ago', text:'Got my education loan for Canada without collateral. The team compared 8 banks and got me the lowest rate. Highly recommend!', profile_photo_url:'' },
-          { author_name:'Ananya Singh', rating:5, relative_time_description:'1 month ago', text:'Outstanding support for my UK university loan. The documentation checklist they provided saved so much time. 5 stars!', profile_photo_url:'' },
-          { author_name:'Karan Mehta', rating:5, relative_time_description:'4 months ago', text:'Free consultation that actually helped. Got ₹40L for IIT fees without any collateral. Very professional team.', profile_photo_url:'' },
-          { author_name:'Sneha Patel', rating:5, relative_time_description:'2 weeks ago', text:'Best education loan consultant in Delhi. Helped my daughter secure loan for MBBS abroad. Quick disbursement too!', profile_photo_url:'' },
-          { author_name:'Arjun Nair', rating:5, relative_time_description:'5 months ago', text:'Compared loans from SBI, HDFC Credila and Axis Bank. Study LEAP negotiated a better rate than I found online. Amazing!', profile_photo_url:'' }
-        ];
-        reviews = staticReviews;
-        total = staticReviews.length;
+        // ── Honest empty state: no fabricated reviews. Shows once and stops — 
+        // swap PLACE_ID above for live Google Reviews the moment it's set up. ──
+        console.log('[Study LEAP] No PLACE_ID configured yet — showing "reviews coming soon" state.');
         document.getElementById('rv-loading') && (document.getElementById('rv-loading').style.display = 'none');
-        document.getElementById('rv-viewport') && (document.getElementById('rv-viewport').style.display = 'block');
-        document.getElementById('rv-nav') && (document.getElementById('rv-nav').style.display = 'flex');
-        renderSlider();
+        var comingSoon = document.getElementById('rv-coming-soon');
+        if (comingSoon) comingSoon.style.display = 'block';
       }
     })();

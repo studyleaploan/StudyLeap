@@ -26,13 +26,13 @@ crons = ["*/30 * * * *"]
 #
 #  Variable (plain text):
 #   WHATSAPP_PHONE_ID             = 1146151658573233
-#   WHATSAPP_RECIPIENTS           = 919041590510,919654097708
+#   WHATSAPP_RECIPIENTS           = 918837693510,919654097708
 #   TELEGRAM_CHAT_ID              = 7771888228
 #   EMAILJS_SERVICE_ID            = service_vsw1dob
 #   EMAILJS_TEMPLATE_ID           = template_wq540ol
 #   EMAILJS_AUTOREPLY_TEMPLATE_ID = template_fpaeota
 #   EMAILJS_PUBLIC_KEY            = (from EmailJS account page)
-#   INDEXNOW_KEY                  = de0eddccb6aebc2e35904e85f45877b6
+#   INDEXNOW_KEY                  = a43564061a204f628c53dbad80fe566e
 #
 #  Secret (encrypted):
 #   WHATSAPP_TOKEN                = (Meta permanent system user token)

@@ -222,7 +222,7 @@ function handleSendSummary(data) {
         'overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);max-width:600px;">' +
 
         // Header
-        '<tr><td style="background:linear-gradient(135deg,#4C3B8C 0%,#2E2359 100%);padding:36px 40px;text-align:center;">' +
+        '<tr><td style="background:linear-gradient(135deg,#0E6B5C 0%,#0B4E42 100%);padding:36px 40px;text-align:center;">' +
         '<h1 style="color:#ffffff;margin:0;font-size:26px;font-weight:700;letter-spacing:-0.5px;">Study LEAP</h1>' +
         '<p style="color:rgba(255,255,255,0.85);margin:6px 0 0;font-size:14px;">Education Loan Assistance</p>' +
         '</td></tr>' +
@@ -241,9 +241,9 @@ function handleSendSummary(data) {
 
         // Reference ID
         '<tr><td style="padding:24px 40px 0;">' +
-        '<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px 20px;text-align:center;">' +
+        '<div style="background:#eff6ff;border:1px solid #a7e3d6;border-radius:8px;padding:16px 20px;text-align:center;">' +
         '<p style="margin:0;color:#64748b;font-size:13px;">Your Reference ID</p>' +
-        '<p style="margin:4px 0 0;color:#4C3B8C;font-size:20px;font-weight:700;letter-spacing:1px;">' + refId + '</p>' +
+        '<p style="margin:4px 0 0;color:#0E6B5C;font-size:20px;font-weight:700;letter-spacing:1px;">' + refId + '</p>' +
         '<p style="margin:4px 0 0;color:#94a3b8;font-size:12px;">Submitted on ' + submittedAt + '</p>' +
         '</div>' +
         '</td></tr>' +
@@ -286,7 +286,7 @@ function handleSendSummary(data) {
 
         // CTA button
         '<tr><td style="padding:28px 40px 0;text-align:center;">' +
-        '<a href="https://wa.me/919041590510?text=Hi%2C%20my%20reference%20ID%20is%20' + refId + '" ' +
+        '<a href="https://wa.me/918837693510?text=Hi%2C%20my%20reference%20ID%20is%20' + refId + '" ' +
         'style="display:inline-block;background:#25d366;color:#ffffff;text-decoration:none;' +
         'padding:14px 32px;border-radius:8px;font-size:15px;font-weight:700;">💬 WhatsApp Us for Quick Help</a>' +
         '</td></tr>' +
@@ -295,8 +295,8 @@ function handleSendSummary(data) {
         '<tr><td style="padding:32px 40px;text-align:center;border-top:1px solid #e2e8f0;margin-top:28px;">' +
         '<p style="margin:0;color:#94a3b8;font-size:13px;line-height:1.6;">' +
         'Study LEAP | Education Loan Specialists<br>' +
-        '<a href="https://www.studyleap.in" style="color:#4C3B8C;text-decoration:none;">www.studyleap.in</a> | ' +
-        '<a href="mailto:info@studyleap.in" style="color:#4C3B8C;text-decoration:none;">info@studyleap.in</a>' +
+        '<a href="https://www.studyleap.in" style="color:#0E6B5C;text-decoration:none;">www.studyleap.in</a> | ' +
+        '<a href="mailto:info@studyleap.in" style="color:#0E6B5C;text-decoration:none;">info@studyleap.in</a>' +
         '</p>' +
         '</td></tr>' +
 
@@ -311,7 +311,7 @@ function handleSendSummary(data) {
         'Course: ' + (si.course || '') + ' | College: ' + (si.college || '') + '\n' +
         'Loan Amount: ' + (si.amount || '') + '\n\n' +
         'Our team will contact you within 24-48 hours.\n\n' +
-        'WhatsApp: +91 90415 90510\n' +
+        'WhatsApp: +91 88376 93510\n' +
         'Team Study LEAP | www.studyleap.in',
         { htmlBody: htmlBody }
       );

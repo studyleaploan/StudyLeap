@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (el) el.addEventListener('focus', onContactFormStart, { once: true });
   });
 });
-const WA_FALLBACK = 'https://wa.me/919041590510?text=';
+const WA_FALLBACK = 'https://wa.me/918837693510?text=';
 
 // ── Contextual WhatsApp messaging: page-aware click-to-chat text ──
 function buildContextualWaMessage() {
@@ -55,7 +55,7 @@ function initContextualWhatsApp() {
   if (!msg) return; // homepage / legal pages / unclassified keep their existing hardcoded message
   const encoded = encodeURIComponent(msg);
   document.querySelectorAll('a.whatsapp-btn, a.wa').forEach(el => {
-    el.setAttribute('href', `https://wa.me/919041590510?text=${encoded}`);
+    el.setAttribute('href', `https://wa.me/918837693510?text=${encoded}`);
   });
 }
 document.addEventListener('DOMContentLoaded', initContextualWhatsApp);
@@ -105,7 +105,7 @@ function showToast(name, phone) {
   const details = document.getElementById('sc-toast-details');
   const waLink  = overlay.querySelector('.sc-toast-btn-wa');
   const waText  = encodeURIComponent(`Hello Study LEAP! I just submitted a loan inquiry.\nName: ${name}\nPhone: ${phone}`);
-  waLink.href = `https://wa.me/919041590510?text=${waText}`;
+  waLink.href = `https://wa.me/918837693510?text=${waText}`;
   details.innerHTML =
     `📞 Expect a call within <strong>2 business hours</strong><br>` +
     `📧 Confirmation sent to your email<br>` +
@@ -156,8 +156,8 @@ function showFormError(containerId, name, phone) {
                  text-decoration:none;font-weight:600;font-size:13px;">
           💬 WhatsApp Us
         </a>
-        <a href="tel:+919041590510"
-          style="background:#4C3B8C;color:#fff;padding:7px 14px;border-radius:6px;
+        <a href="tel:+918837693510"
+          style="background:#0E6B5C;color:#fff;padding:7px 14px;border-radius:6px;
                  text-decoration:none;font-weight:600;font-size:13px;">
           📞 Call Now
         </a>

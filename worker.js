@@ -39,7 +39,7 @@
  * Environment Variables (Cloudflare Dashboard → Worker → Settings → Variables):
  *   WHATSAPP_TOKEN          — Meta permanent system user token
  *   WHATSAPP_PHONE_ID       — Meta Phone ID (e.g. 1146151658573233)
- *   WHATSAPP_RECIPIENTS     — Comma-separated numbers e.g. "919041590510,919654097708"
+ *   WHATSAPP_RECIPIENTS     — Comma-separated numbers e.g. "918837693510,919654097708"
  *   TELEGRAM_BOT_TOKEN      — Telegram bot token
  *   TELEGRAM_CHAT_ID        — Telegram chat/group ID
  *   EMAILJS_SERVICE_ID      — EmailJS service ID
@@ -59,7 +59,7 @@ const ALLOWED_ORIGINS = [
 ];
 
 // Fallback recipients if WHATSAPP_RECIPIENTS env var not set
-const WA_FALLBACK_NUMBERS = ['919041590510']; // TODO(Study LEAP): add a second number here if you want alerts sent to more than one phone
+const WA_FALLBACK_NUMBERS = ['918837693510']; // TODO(Study LEAP): add a second number here if you want alerts sent to more than one phone
 
 function isAllowedOrigin(o) { return ALLOWED_ORIGINS.includes(o); }
 

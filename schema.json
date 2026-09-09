@@ -8,9 +8,9 @@
     "image": ["https://www.studyleap.in/og-image.jpg"],
     "logo": "https://www.studyleap.in/logo.png",
     "url": "https://www.studyleap.in",
-    "telephone": ["+919041590510", "+919041590510"],
+    "sameAs": ["https://www.instagram.com/studyleapeducationloan/"],
+    "telephone": "+918837693510",
     "email": "info@studyleap.in",
-    "foundingDate": "2024",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, Bank Transfer, UPI, NEFT",
     "priceRange": "Free Consultation",
@@ -49,14 +49,7 @@
       "EMI Calculation",
       "Bank Comparison"
     ],
-    "description": "Study LEAP is a trusted education loan consultant in Barnala, Punjab offering free consultation for domestic and international education loans. We compare rates across 50+ banks to get you the best deal.",
-    "sameAs": [
-      "https://www.facebook.com/studyleap.official",
-      "https://www.instagram.com/studyleap.official",
-      "https://www.youtube.com/@studyleap.official",
-      "https://www.linkedin.com/company/studyleap",
-      "https://twitter.com/studyleap.official"
-    ],
+    "description": "Study LEAP is a trusted education loan consultant in Barnala, Punjab offering free consultation for domestic and international education loans. We compare rates across 8+ lending partners to get you the best deal.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Education Loan Services",

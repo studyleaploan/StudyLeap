@@ -38,8 +38,8 @@
  *
  * Environment Variables (Cloudflare Dashboard → Worker → Settings → Variables):
  *   WHATSAPP_TOKEN          — Meta permanent system user token
- *   WHATSAPP_PHONE_ID       — Meta Phone ID (e.g. 1146151658573233)
- *   WHATSAPP_RECIPIENTS     — Comma-separated numbers e.g. "918837693510,919654097708"
+ *   WHATSAPP_PHONE_ID       — Meta Phone ID from your own WhatsApp Business account
+ *   WHATSAPP_RECIPIENTS     — Comma-separated numbers to alert, e.g. "918837693510"
  *   TELEGRAM_BOT_TOKEN      — Telegram bot token
  *   TELEGRAM_CHAT_ID        — Telegram chat/group ID
  *   EMAILJS_SERVICE_ID      — EmailJS service ID
@@ -599,7 +599,7 @@ async function handleFormSubmit(request, env, origin) {
             loan_amount:   emailParams['Loan Amount']  || 'As required',
             course:        emailParams['Course']       || 'Your course',
             submitted_at:  emailParams['Submitted At'] || new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-            reply_to:      'info@studyleap.in',
+            reply_to:      'support@studyleap.in',
           },
         }),
       });

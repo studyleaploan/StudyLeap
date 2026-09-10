@@ -13,11 +13,11 @@
 // ═══════════════════════════════════════════════════════════════════════
 
 const DRIVE_FOLDER_NAME = "Study LEAP \u2013 Loan Documents";
-const NOTIFY_EMAIL      = "info@studyleap.in";
+const NOTIFY_EMAIL      = "support@studyleap.in";
 
 // ─── WHATSAPP CONFIG ──────────────────────────────────────────────────
-const WA_PHONE_ID = '1146151658573233';   // ✅ correct Phone ID
-const WA_TEMPLATE = 'studyleap_otp2';   // ✅ correct template name
+const WA_PHONE_ID = 'REPLACE_WITH_YOUR_META_PHONE_ID';   // ⚠️ get this from Meta Business Suite → WhatsApp → API Setup
+const WA_TEMPLATE = 'studyleap_otp2';   // create this template name in your own WhatsApp Business account
 // ─────────────────────────────────────────────────────────────────────
 
 // ─── doGet — OTP requests from browser ───────────────────────────────
@@ -296,7 +296,7 @@ function handleSendSummary(data) {
         '<p style="margin:0;color:#94a3b8;font-size:13px;line-height:1.6;">' +
         'Study LEAP | Education Loan Specialists<br>' +
         '<a href="https://www.studyleap.in" style="color:#0E6B5C;text-decoration:none;">www.studyleap.in</a> | ' +
-        '<a href="mailto:info@studyleap.in" style="color:#0E6B5C;text-decoration:none;">info@studyleap.in</a>' +
+        '<a href="mailto:support@studyleap.in" style="color:#0E6B5C;text-decoration:none;">support@studyleap.in</a>' +
         '</p>' +
         '</td></tr>' +
 

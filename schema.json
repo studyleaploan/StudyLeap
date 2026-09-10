@@ -10,7 +10,7 @@
     "url": "https://www.studyleap.in",
     "sameAs": ["https://www.instagram.com/studyleapeducationloan/"],
     "telephone": "+918837693510",
-    "email": "info@studyleap.in",
+    "email": "support@studyleap.in",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, Bank Transfer, UPI, NEFT",
     "priceRange": "Free Consultation",
@@ -30,8 +30,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 30.3797,
-      "longitude": 75.5461
+      "latitude": 30.3747115,
+      "longitude": 75.5374386
     },
     "areaServed": [
       {"@type": "Country", "name": "India"},

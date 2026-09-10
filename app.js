@@ -163,7 +163,7 @@ function showFormError(containerId, name, phone) {
         </a>
       </div>
       <div style="margin-top:6px;font-size:12px;color:#666;">
-        Or email us at <a href="mailto:info@studyleap.in">info@studyleap.in</a>
+        Or email us at <a href="mailto:support@studyleap.in">support@studyleap.in</a>
       </div>
     </div>`;
   container.appendChild(banner);

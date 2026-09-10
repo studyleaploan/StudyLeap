@@ -13,10 +13,12 @@ compatibility_date = "2025-09-01"
 compatibility_flags = ["nodejs_compat"]
 
 # ── D1 Database Binding ────────────────────────────────────────────────────
+# database_id below is a PLACEHOLDER. Run `wrangler d1 create studyleap-leads`
+# in your own Cloudflare account first, then paste the real ID it gives you here.
 [[d1_databases]]
 binding = "DB"
 database_name = "studyleap-leads"
-database_id = "68e02d3e-6bfa-4f4c-bf2d-643a74fde434"
+database_id = "c2be1e1c-29de-4b5e-b8b1-6cb592d00e42"
 
 # ── Cron Trigger (Follow-up reminders every 30 min) ───────────────────────
 [triggers]
@@ -24,13 +26,14 @@ crons = ["*/30 * * * *"]
 
 # ── Secrets (add via Dashboard → studyleap-form-handler → Settings) ────
 #
-#  Variable (plain text):
-#   WHATSAPP_PHONE_ID             = 1146151658573233
-#   WHATSAPP_RECIPIENTS           = 918837693510,919654097708
-#   TELEGRAM_CHAT_ID              = 7771888228
-#   EMAILJS_SERVICE_ID            = service_vsw1dob
-#   EMAILJS_TEMPLATE_ID           = template_wq540ol
-#   EMAILJS_AUTOREPLY_TEMPLATE_ID = template_fpaeota
+#  Variable (plain text) — these are EXAMPLE FORMATS ONLY, not real values.
+#  Fill in your own from each service's dashboard:
+#   WHATSAPP_PHONE_ID             = (from Meta Business Suite → WhatsApp → API Setup)
+#   WHATSAPP_RECIPIENTS           = 918837693510   (add more, comma-separated, if needed)
+#   TELEGRAM_CHAT_ID              = (from your Telegram bot — message it, then check getUpdates)
+#   EMAILJS_SERVICE_ID            = (from EmailJS account page)
+#   EMAILJS_TEMPLATE_ID           = (from EmailJS account page)
+#   EMAILJS_AUTOREPLY_TEMPLATE_ID = (from EmailJS account page)
 #   EMAILJS_PUBLIC_KEY            = (from EmailJS account page)
 #   INDEXNOW_KEY                  = a43564061a204f628c53dbad80fe566e
 #
